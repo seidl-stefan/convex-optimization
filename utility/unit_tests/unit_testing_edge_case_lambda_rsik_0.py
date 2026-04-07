@@ -8,10 +8,8 @@
 import pytest
 
 import numpy  as np
-import pandas as pd
-import cvxpy  as cp
 
-from optimizing_utility import solve_portfolio
+from ..optimizing_utility import solve_portfolio
 
 
 def test_diversification_high_risk_aversion():

@@ -14,17 +14,23 @@ Das Skript nutzt konvexe Optimierung (`cvxpy`), um die ideale Gewichtung von Ass
 * **Sprache:** Python 3.x
 * **Module:** `cvxpy` (Optimierung), `numpy` (Matrizenrechnung), `pandas` (Datenhandling), `pytest` (Testing)
 
-## Repository klonen
-```bash
-# Repository klonen
-git clone [https://github.com/seidl-stefan/convex-optimization.git](https://github.com/seidl-stefan/convex-optimization.git)
+## Projektstruktur
+* `utility/`: Enthält den mathematischen Kern des Optimierers.
+    * `optimizing_utility.py`: Hauptlogik zur Portfolio-Berechnung.
+* `utility/test/`: Beinhaltet alle Qualitätssicherungs-Tests.
+    * `unit_testing_edge_case_lambda_rsik_0.py`: Validierung der Grenzfälle.
 
-# Wechsle in den Ordner
+## Repository klonen und Portfolio-Optimierung Ausführen
+```bash
+# 1. Repository klonen und in den Ordner wechseln
+git clone https://github.com/seidl-stefan/convex-optimization.git
 cd convex-optimization
 
-# Installation der Abhängigkeiten
+# 2. Installation der Abhängigkeiten
 pip install cvxpy numpy pandas pytest
 
-# Führe die Optimierung oder den Test aus
-python optimizing_utility.py
-pytest unit_testing_edge_case_lambda_rsik_0.py
+# 3. Führe die Optimierung aus (aus dem Hauptverzeichnis)
+python utility/optimizing_utility.py
+
+# 4. Führe den Test aus (aus dem Hauptverzeichnis)
+pytest utility/unit_tests/unit_testing_edge_case_lambda_rsik_0.py
