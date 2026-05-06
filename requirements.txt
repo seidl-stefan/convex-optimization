@@ -1,0 +1,14 @@
+# Mathematische Grundlagen
+numpy==1.26.4
+cvxpy==1.4.2
+pandas
+
+# Optimierung
+cvxpy
+
+# Daten & API
+yfinance
+scipy
+
+# Testing (wichtig für CI)
+pytest

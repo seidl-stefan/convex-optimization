@@ -10,6 +10,11 @@ Das Skript nutzt konvexe Optimierung (`cvxpy`), um die ideale Gewichtung von Ass
 * **Risiko-Management:** Variabler Parameter $\lambda$ zur Steuerung der individuellen Risiko-Aversion.
 * **Edge-Case Validierung:** Überprüfung mathematischer Grenzfälle (z.B. reine Renditemaximierung bei $\lambda = 0$).
 
+## Präsentation & Theorie
+Für eine detaillierte Einführung in die mathematischen Hintergründe (Konvexität der Varianz, Lagrange-Optimierung und zusätzlich RSI-Integration) stehen die begleitenden Slides zur Verfügung:
+
+* [**mvo-convex-optimization-presentation.pdf**](mvo-convex-optimization-presentation.pdf)
+
 ## Tech Stack
 * **Sprache:** Python 3.x
 * **Module:** `cvxpy` (Optimierung), `numpy` (Matrizenrechnung), `pandas` (Datenhandling), `pytest` (Testing)
